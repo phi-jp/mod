@@ -1,0 +1,55 @@
+//- layout.jade
+doctype html
+
+html
+  head
+    meta(charset='utf-8')
+
+    meta(name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1")
+    meta(name="apple-mobile-web-app-capable" content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+    link(type="image/x-icon", rel="shortcut icon", href="/images/japan.png")
+
+    title #{title} | 防衛装備庁
+    meta(name="description", content="防衛装備庁のHPがあまりにもだったので勝手にリニューアルしてみた")
+    meta(name="keywords", content="phiary,web,hp,country")
+
+    //- for facebook
+    meta(property='og:title', content='#{title} | 防衛装備庁')
+    meta(property='og:type', content='website')
+    meta(property='og:description', content='防衛装備庁のHPがあまりにもだったので勝手にリニューアルしてみた')
+    meta(property='og:url', content='http://mod-jp.herokuapp.com')
+    meta(property='og:image', content='https://www.evernote.com/shard/s226/sh/dc7855ac-f661-41f8-b40f-76e8346ec60c/9eee45d991c501a8/deep/0/')
+    meta(property='og:site_name', content='#{title} | 防衛装備庁')
+    meta(property='og:email', content='phi1618jp@gmail.com')
+
+    //- for twitter card
+    meta(name="twitter:card", content="summary")
+    meta(name="twitter:site", content="@phi_jp")
+    meta(name="twitter:creator", content="@phi_jp")
+
+    script(src="https://code.jquery.com/jquery-2.1.4.min.js")
+
+    // materialize
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.js')
+
+    // web font
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Righteous')
+
+    // -
+    link(rel='stylesheet', href='/styles/style.css')
+
+  body
+    block content
+
+    //- google analytics code
+    //- script.
+    //-   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    //-   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    //-   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    //-   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    //-   ga('create', 'UA-19424304-6', 'auto');
+    //-   ga('send', 'pageview');
